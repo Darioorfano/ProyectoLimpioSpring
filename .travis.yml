@@ -2,3 +2,10 @@ language: java
 script: mvn clean test
 jdk:
   - oraclejdk11
+#Notifications sirve para que me llegue la notificacion al mail
+notifications:
+  email:
+    recipients:
+      - darioorfano@hotmail.com
+    on_success: change
+    on_failure: always  
